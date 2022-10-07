@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="rotoforge" /><link rel="canonical" href="https://rotoforge.com/bom/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>BOM - rotoforge</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "BOM";
+        var mkdocs_page_input_path = "bom.md";
+        var mkdocs_page_url = "/bom/";
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> rotoforge
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../introduction/">Introduction</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../roadmap/">Roadmap</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">BOM</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#a-cnc-control-frame">A CNC Control Frame</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#rigid-spindle-upgrade">Rigid spindle upgrade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#a-hard-nozzle-or-tool">A hard nozzle or tool</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#a-spindle-motor-upgrade">A spindle motor upgrade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#some-way-to-feed-material-through-the-nozzle">some way to feed material through the nozzle</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../build.md">Build</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">rotoforge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>BOM</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rotoforge-bill-of-materials">Rotoforge Bill of Materials</h1>
+<p>None of the following links are affiliated. You should also feel free to try your own 3D printer, router and other motion control frames! the forces involved are relatively similar to those in FDM.</p>
+<h2 id="a-cnc-control-frame">A CNC Control Frame</h2>
+<p>more rigid frames are better for control, but even the 3018 will work... it is probably less rigid than the ender 3 3D printer all things considered.
+<a href="https://www.amazon.com/Genmitsu-3018-PRO-Control-Engraving-300x180x45mm/dp/B07P6K9BL3/ref=sr_1_4?crid=22BXAIBHZ7NDS&amp;keywords=genmitsu+CNC+3018&amp;qid=1663449979&amp;sprefix=genmitsu+cnc+301%2Caps%2C378&amp;sr=8-4">Genmitsu3018PRO</a></p>
+<h2 id="rigid-spindle-upgrade">Rigid spindle upgrade</h2>
+<p>This provides a clamp for the motor that wont melt. 3D printed clamps could do as well if they could tolerate te ~50-80 C of the spindle motor body.
+<a href="https://www.amazon.com/dp/B091TJRPF1/ref=twister_B0931X95LV?_encoding=UTF8&amp;psc=1">Genmitsu3018spindleupgrade</a></p>
+<h2 id="a-hard-nozzle-or-tool">A hard nozzle or tool</h2>
+<p>Tungsten alloy, tool steel, tungsten carbide are all more affordable alternatives. 1 mm hole is preferred because it is just easier to work with, but smaller nozzle sizes are in the works.
+<a href="https://www.amazon.com/dp/B0B3BY8DCF/ref=twister_B09X61NG5S?_encoding=UTF8&amp;psc=1">Diamondback polycrystalline diamond nozzle</a></p>
+<h2 id="a-spindle-motor-upgrade">A spindle motor upgrade</h2>
+<p>You will need some way to spin the hard tool while in contact with a surface. A hollow shaft DC motor, drilled and tapped to M6 should do the trick. There are likely many other ways to do this as well. Such as off center belted spindles.
+<a href="https://www.amazon.com/Permanent-Electric-Brushed-Adjustable-3000RPM/dp/B07G4GXTP6">hollow shaft DC motor</a></p>
+<h2 id="some-way-to-feed-material-through-the-nozzle">some way to feed material through the nozzle</h2>
+<p>You will need a way to feed material through the spinning shaft and nozzle to the deposition zone. Its helpful to avoid contact between the material and the shaft walls as the walls tend to act like a centrifuge. Air and water fluidize beds can be used to varying degrees of success. Air being a much more dangerous option. there are likely many other ways to do this, such as auger feed, and gravity feed. 
+<a href="https://www.amazon.com/gp/product/B0791VWZZV/ref=ewc_pr_img_1?smid=A35C2NGNUSD9X5&amp;psc=1">100 mm 20 gauge material deposition needles</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../contributing/" class="btn btn-neutral float-left" title="Contributing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../contributing/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
