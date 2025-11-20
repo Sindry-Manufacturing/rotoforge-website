@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Open source/hardware additive friction stir deposition 3D printer" /><meta name="author" content="Rotoforge" /><link rel="canonical" href="https://rotoforge.com/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Rotoforge</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Welcome";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> Rotoforge
+        </a>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Welcome</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-rotoforge">What is Rotoforge?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#where-we-are-right-now">Where we are right now</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#where-we-want-to-be">Where we want to be</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#licensing-information-operating-principles">Licensing information (operating principles)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#why-do-this">Why do this?</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="FAQ/">FAQ</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="a-list-of-methods/">A List of Methods Being Considered</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="contributing/">Contributing and Community Links</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="roadmap/">Rotoforge Roadmap</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Rotoforge Machines</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="Rotoforge%20Machines/glowplug-prototype/">Glowplug prototype</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="Rotoforge%20Machines/prototype-afsd/">AFSD Protoype</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">Rotoforge</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Welcome</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="introduction-to-the-project">Introduction to the project</h1>
+<h2 id="what-is-rotoforge">What is Rotoforge?</h2>
+<p>Rotoforge is a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open source</a> <a href="https://en.wikipedia.org/wiki/Open-source_hardware">hardware</a>/software 3d printer for printing metal, plastic and ceramic heterogenously on the home desktop safely and affordably with performance similar to FDM. It takes advantage of a technique known as <a href="https://en.wikipedia.org/wiki/Friction_stir_processing">"additive friction stir deposition" or AFSD</a>.</p>
+<h2 id="where-we-are-right-now">Where we are right now</h2>
+<p>Rotoforge has recently developed into using "Semisolid Metal Direct Write" a type of 3D metal printing where a material in wire form is fed into a hotend to be heated to the temperature range between solidus and liquidus. (basically between fully solid and fully liquid) where the material behaves thixotropically (shear thinning like peanut butter). This is essentially identical to conventional FDM. but with metals, and ceramics thus requiring a hot end that operates at much higher(about 2 orders of magnitude higher) power densities (typically 1-20 watts/square millimeter) and made of materials which will continuously withstand hot sliding abrasive wear with semisolid metals an ceramics.</p>
+<p>Few materials meet these requirements. We have thus far opted to use Si3N4-MoSi2 ceramic matrix composite heating elements found in ceramic glowplugs for this purpose. We have used EDM to drill a hole through these glowplugs, mounted them in an ender 3 heat sink and paired them with a belt extruder to feed them fine (24 AWG, 0.5mm OD) wire. </p>
+<h2 id="where-we-want-to-be">Where we want to be</h2>
+<p>The target total system cost to the end user is &lt;1000 USD with a hotend lifetime in metal printing up to materials including, zinc alloys, aluminum, brass, bronze, copper, monels, and mild steels, ideally not less than 1000 hours. Typical materials costs is bulk metal wire, somewhere between 1 and 100 USD / pound.</p>
+<h2 id="licensing-information-operating-principles">Licensing information (operating principles)</h2>
+<p>The project is currently licensed under the terms of the AGPL-3.0 and the CERN open hard ware license.</p>
+<h2 id="why-do-this">Why do this?</h2>
+<ol>
+<li>Because manufacturing freedom for the individual <em>is</em> individual creative freedom</li>
+<li>Plastic trinkets only get you so far</li>
+<li>A truly self replicating machine and its proported benefits must be able to produce itself <em>entirely</em> from raw materials and energy, wherever it might happen to be. Probably, in places that do not include convenient metal foundry and electronics fabrication infrastructure. </li>
+<li>Insert your reason here. ;)</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="FAQ/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="FAQ/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.6.0
+Build Date UTC : 2024-08-14 19:20:59.875717+00:00
+-->

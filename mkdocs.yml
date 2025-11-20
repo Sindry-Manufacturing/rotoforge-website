@@ -1,0 +1,20 @@
+site_name: Rotoforge
+site_description: Open source/hardware additive friction stir deposition 3D printer
+site_author: Rotoforge
+site_url: https://rotoforge.com
+
+theme: readthedocs
+
+plugins:
+  - awesome-pages:
+      collapse_single_pages: true
+
+markdown_extensions:
+  - admonition
+
+docs_dir: source
+site_dir: docs
+
+nav:
+  - Welcome: 'index.md'
+  - ...
