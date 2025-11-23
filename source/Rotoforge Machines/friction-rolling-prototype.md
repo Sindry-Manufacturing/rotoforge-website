@@ -21,6 +21,32 @@ The latest iteration of Rotoforge has many large scale cousins in the academic l
 and these are only a few examples of the great work being done around the world right now in solid phase processing and friction stir welding and additive manufacturing. There are also local contributors to the conversation to acknowledge.
 
 Domestically, we have companies like [Meld Manufacturing](https://www.meldmanufacturing.com/), and [Bond Technologies](https://bondtechnologies.net/), national labs like PNNL, Oakridge and others. Much of the work from Virginia Tech, particularly the book, by Hang Yu, [Additive Friction Stir Deposition](https://www.sciencedirect.com/book/monograph/9780128243749/additive-friction-stir-deposition) have been great jumping off points for gleaning better process understanding. 
-In particular, [Hunter Rauch](https://www.linkedin.com/in/hunter-rauch-310249107/) was a real inspiration and excellent discussion partner, on the additive friction rolling technique. 
 
-Also [Sam conlin](https://www.linkedin.com/in/samuel-c-506ab6189/) deserves a major ackowledgement for persistance in his technical and emotional support for some long years, and his contributions to simplifying the design, and intent behind the project as well as his incredible contributions of authenticity, kindness and joviality to what would other wise have been a very long slog.  
+
+
+
+## Everyone on the discord who has contributed to this prototype directly or indirectly so far: 
+
+*[Sam conlin](https://www.linkedin.com/in/samuel-c-506ab6189/)* deserves a major ackowledgement for persistance in his technical and emotional support for some long years, and his contributions to simplifying the design, and intent behind the project as well as his incredible contributions of authenticity, kindness and joviality to what would other wise have been a very long slog.  
+
+*[Avery](https://www.youtube.com/@a.very.lockwood)* for lending their excellent DFM and mechanical design skills to the ongoing development of the 4th axis for the printer. 
+
+*[Junkers](https://www.youtube.com/@metalmatters)*- (Metal Matters) for on going assistance managing and monitoring the discord, moral and technical support.
+
+*Kor*- for on going assistance managing and montoring the discord as well as technical advice.
+
+*[Robherc](https://www.youtube.com/@robherc1)*- for on going assistance managing and montoring the discord as well as technical advice.
+
+*(Andrew) Shieldsexperiments*- for their thermomagnometer and on going assistance managing and monitoring the discord. 
+
+*Arandomloverofphysicsandtheuniverse* - for on going assistance managing and montoring the discord and their fully 3D printed 3D printer project.
+
+*noblessePascal*- for their on going assistance managing and montoring the discord and very cool exo suit project as a future application for rotoforge and keeping things lively between lulls.
+
+*No our stuff* -for occasional salient technical suggestions
+
+*Sariah* -for their very interesting laserwaterjet work and insightful comments
+
+*Goodgy* - for their example of a 4 axis milling machine build
+
+*Hubter 123*, [Hunter Rauch](https://www.linkedin.com/in/hunter-rauch-310249107/) was a real inspiration and excellent discussion partner, on the additive friction rolling technique. 
