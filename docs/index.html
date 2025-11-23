@@ -48,6 +48,8 @@
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#why-do-this">Why do this?</a>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#where-and-how-to-get-involved">Where and how to get involved</a>
+    </li>
     </ul>
                 </li>
               </ul>
@@ -69,6 +71,8 @@
               </ul>
               <p class="caption"><span class="caption-text">Rotoforge Machines</span></p>
               <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="Rotoforge%20Machines/friction-rolling-prototype/">Friction rolling prototype</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="Rotoforge%20Machines/glowplug-prototype/">Glowplug prototype</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="Rotoforge%20Machines/prototype-afsd/">AFSD Protoype</a>
@@ -99,14 +103,15 @@
               
                 <h1 id="introduction-to-the-project">Introduction to the project</h1>
 <h2 id="what-is-rotoforge">What is Rotoforge?</h2>
-<p>Rotoforge is a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open source</a> <a href="https://en.wikipedia.org/wiki/Open-source_hardware">hardware</a>/software 3d printer for printing metal, plastic and ceramic heterogenously on the home desktop safely and affordably with performance similar to FDM. It takes advantage of a technique known as <a href="https://en.wikipedia.org/wiki/Friction_stir_processing">"additive friction stir deposition" or AFSD</a>.</p>
+<p>Rotoforge is a <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open source</a> <a href="https://en.wikipedia.org/wiki/Open-source_hardware">hardware</a>/software 3d printer for printing metal, plastic and ceramic heterogenously on the home desktop safely and affordably with performance similar to FDM. It takes advantage of a friction welding technique known as <a href="https://en.wikipedia.org/wiki/Friction_stir_processing">Friction Stir Processing "FSP"</a>. A relatively more recent family of  friction stir techniques known as <a href="https://www.sciencedirect.com/science/article/pii/S1526612525011089">Friction Rolling Additive Manufacturing</a> bears a strong resemblance. </p>
 <h2 id="where-we-are-right-now">Where we are right now</h2>
-<p>Rotoforge has recently developed into using "Semisolid Metal Direct Write" a type of 3D metal printing where a material in wire form is fed into a hotend to be heated to the temperature range between solidus and liquidus. (basically between fully solid and fully liquid) where the material behaves thixotropically (shear thinning like peanut butter). This is essentially identical to conventional FDM. but with metals, and ceramics thus requiring a hot end that operates at much higher(about 2 orders of magnitude higher) power densities (typically 1-20 watts/square millimeter) and made of materials which will continuously withstand hot sliding abrasive wear with semisolid metals an ceramics.</p>
-<p>Few materials meet these requirements. We have thus far opted to use Si3N4-MoSi2 ceramic matrix composite heating elements found in ceramic glowplugs for this purpose. We have used EDM to drill a hole through these glowplugs, mounted them in an ender 3 heat sink and paired them with a belt extruder to feed them fine (24 AWG, 0.5mm OD) wire. </p>
+<p>We are repeatably printing aluminum <a href="https://en.wikipedia.org/wiki/1100_aluminium_alloy">1100</a>, and <a href="https://en.wikipedia.org/wiki/Aluminium%E2%80%93magnesium_alloys">5054</a>, bars, walls, and tensile / flexural test specimens from 0.5mm OD wire using the <a href="https://github.com/Sindry-Manufacturing/rotoforge/blob/a09c34a0b46779132ed0c06f043717a615cee749/src/parts/CAD">latest version of the hardware</a> and a <a href="https://github.com/Sindry-Manufacturing/rotoforge/blob/a09c34a0b46779132ed0c06f043717a615cee749/src/afrb_playground_gui(2).py">basic python g-code generator</a>.  We are implementing temperature, torque and force monitoring to better characterize the process and help us design smaller, cheaper, faster, and more accurate printers based on the process. </p>
 <h2 id="where-we-want-to-be">Where we want to be</h2>
-<p>The target total system cost to the end user is &lt;1000 USD with a hotend lifetime in metal printing up to materials including, zinc alloys, aluminum, brass, bronze, copper, monels, and mild steels, ideally not less than 1000 hours. Typical materials costs is bulk metal wire, somewhere between 1 and 100 USD / pound.</p>
+<p>The <a href="https://github.com/Sindry-Manufacturing/rotoforge/blob/a09c34a0b46779132ed0c06f043717a615cee749/docs/billsofmaterials/Rotoforge%20BOM%2011152025%20-%20Amazon%20BOM-2.pdf">total BOM cost</a> at time of writing, including the ender 3 and all custom parts is ~$791.43. This leaves room for another 3-5X reduction with group buys, better sourcing, and design for manufacturing. less than $500 is the target BOM. </p>
+<p>In the next 3-6 months we want to be reliably printing strong aluminum objects with complexity approaching a benchy with line widths of less than 2.5 mm. </p>
+<p>Besides downcosting, building a community of developers, building a large printable material library(all aluminums, copper and copper alloys, steels, ceramics, cermets), expanding the range of achievable material properties as printed, developing a complete closed loop control system, digital twinning, are all high on the list. </p>
 <h2 id="licensing-information-operating-principles">Licensing information (operating principles)</h2>
-<p>The project is currently licensed under the terms of the AGPL-3.0 and the CERN open hard ware license.</p>
+<p>The project is currently licensed under the terms of the <a href="https://github.com/Sindry-Manufacturing/rotoforge/blob/a09c34a0b46779132ed0c06f043717a615cee749/LICENSE">AGPL-3.0</a> and the <a href="https://github.com/Sindry-Manufacturing/rotoforge/blob/a09c34a0b46779132ed0c06f043717a615cee749/cern_ohl_s_v2.txt">CERN open hardware license</a>.</p>
 <h2 id="why-do-this">Why do this?</h2>
 <ol>
 <li>Because manufacturing freedom for the individual <em>is</em> individual creative freedom</li>
@@ -114,6 +119,9 @@
 <li>A truly self replicating machine and its proported benefits must be able to produce itself <em>entirely</em> from raw materials and energy, wherever it might happen to be. Probably, in places that do not include convenient metal foundry and electronics fabrication infrastructure. </li>
 <li>Insert your reason here. ;)</li>
 </ol>
+<h2 id="where-and-how-to-get-involved">Where and how to get involved</h2>
+<p>We have a <a href="https://discord.gg/tprMSEd4wA">discord server</a> where we discuss our latest efforts and share and discuss other projects from the wider community and a <a href="https://www.youtube.com/@rotoforge2024">youtube channel</a> where we post experimental logs, build guides, and project videos for Rotoforge, as well as a <a href="https://dailyrotoforge.blogspot.com/">blog</a> where we write longer technical updates periodically. </p>
+<p>Join the discord, introduce yourself in introductions, and help us out by watching our content, sharing it, donating time/money if you can/want and if you are feeling up to the task, building your own Rotoforge!</p>
               
             </div>
           </div><footer>
@@ -160,6 +168,6 @@
 </html>
 
 <!--
-MkDocs version : 1.6.0
-Build Date UTC : 2024-08-14 19:20:59.875717+00:00
+MkDocs version : 1.6.1
+Build Date UTC : 2025-11-23 01:13:15.936513+00:00
 -->
